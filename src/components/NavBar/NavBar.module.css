@@ -1,11 +1,32 @@
 .nav {
-  background-color: rgb(13, 116, 235);
-  padding: 1rem;
+  background-color: rgb(10, 10, 10);
+  padding: 0.7rem;
   display: flex;
+  gap: 1rem;
   justify-content: space-between;
 }
 
 .nav ul {
   display: flex;
   gap: 1rem;
+}
+
+.nav a {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+.searchInput {
+  flex: 1;
+  margin: 0 2rem;
+}
+
+.searchInput input {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  height: 2rem;
+
+  padding: 0.5rem;
 }

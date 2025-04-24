@@ -10,13 +10,22 @@ const NavBar = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="shop">Shop</Link>
+            <Link to="/shop">Shop</Link>
           </li>
         </ul>
       </div>
-
+      <div className={styles.searchInput}>
+        <input type="text" name="" id="" placeholder="Search eMart" />
+      </div>
       <div>
-        <Link to="cart">Cart</Link>
+        <ul>
+          <li>
+            <Link to="/account">Account</Link>
+          </li>
+          <li>
+            <Link to="/cart">Cart</Link>
+          </li>
+        </ul>
       </div>
     </nav>
   );

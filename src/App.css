@@ -4,10 +4,49 @@
   padding: 0;
 }
 
+body {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p,
+li,
+figcaption {
+  text-wrap: pretty;
+  max-width: 65ch;
+}
+
 li {
   list-style: none;
 }
 
 a {
   text-decoration: none;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --main-color: rgb(10, 10, 10);
+}
+
+.primary-bg {
+  background-color: var(--main-color);
+}
+
+main {
+  background-color: white;
+  min-height: 100vh;
+  padding: 2rem;
 }

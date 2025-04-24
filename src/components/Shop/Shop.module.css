@@ -1,0 +1,14 @@
+.shop {
+}
+
+.btn {
+  color: white;
+  padding: 1rem;
+  background-color: black;
+  border-radius: 8px;
+}
+
+/* .check-out {
+  composes: btn;
+  composes: primary-bg from "/src/App.css";
+} */
