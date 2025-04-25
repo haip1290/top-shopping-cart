@@ -38,7 +38,7 @@ a {
   line-height: 1.5;
   font-weight: 400;
 
-  --main-color: rgb(181, 184, 9);
+  --main-color: rgba(134, 9, 9, 0.603);
 }
 
 .primary-bg {

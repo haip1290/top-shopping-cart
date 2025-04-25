@@ -1,5 +1,8 @@
 .product {
   flex: 1 1 calc(20% - 1rem);
+  min-width: 320px;
+  max-width: calc(20%-1rem);
+
   border: 1px solid black;
   border-radius: 8px;
 
@@ -14,4 +17,16 @@
   width: 100%;
   height: 200px;
   object-fit: contain;
+}
+
+.quantityContainer {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  composes: btn from "../Shop/Shop.module.css";
+  composes: primary-bg from global;
+}
+
+.addToCart {
 }

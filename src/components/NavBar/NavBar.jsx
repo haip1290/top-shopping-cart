@@ -1,7 +1,7 @@
 import styles from "./NavBar.module.css";
 import { Link } from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = ({ quantity }) => {
   return (
     <nav className={styles.nav}>
       <div>
@@ -15,7 +15,12 @@ const NavBar = () => {
         </ul>
       </div>
       <div className={styles.searchInput}>
-        <input type="text" name="" id="" placeholder="Search eMart" />
+        <input
+          type="text"
+          name="search-input"
+          id="search-input"
+          placeholder="Search eMart"
+        />
       </div>
       <div>
         <ul>
@@ -23,7 +28,7 @@ const NavBar = () => {
             <Link to="/account">Account</Link>
           </li>
           <li>
-            <Link to="/cart">Cart</Link>
+            <Link to="/cart">Cart ({quantity})</Link>
           </li>
         </ul>
       </div>

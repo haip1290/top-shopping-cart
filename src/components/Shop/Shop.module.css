@@ -12,13 +12,15 @@
 
 .btn {
   display: inline-block;
+
   color: white;
   padding: 1rem;
+
   border-radius: 8px;
+  border: none;
 }
 
 .checkout {
-  color: black;
   composes: btn;
   composes: primary-bg from global;
 }

@@ -1,0 +1,38 @@
+.quantityContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quantityContainer input {
+  width: 50px;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  /* Remove default number input controls (arrows) */
+  -moz-appearance: textfield; /* For Firefox */
+  -webkit-appearance: none; /* For Webkit browsers like Chrome/Safari */
+  appearance: none; /* For other browsers */
+}
+
+.quantityContainer input::-webkit-outer-spin-button,
+.quantityContainer input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn {
+  composes: btn from "../Shop/Shop.module.css";
+  composes: primary-bg from global;
+
+  padding: 0.25rem 0.75rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 0.1rem;
+}
