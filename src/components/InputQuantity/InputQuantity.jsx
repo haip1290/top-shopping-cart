@@ -21,7 +21,7 @@ const InputQuantity = ({ quantity, setQuantity }) => {
         min="1"
         onChange={(event) => handleOnChange(event)}
       />
-      <div>
+      <div className={styles.btnGroup}>
         <button type="button" className={styles.btn} onClick={handleIncrease}>
           +
         </button>

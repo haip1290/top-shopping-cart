@@ -25,6 +25,11 @@
   margin: 0;
 }
 
+.btnGroup {
+  display: flex;
+  gap: 0.1rem;
+}
+
 .btn {
   composes: btn from "../Shop/Shop.module.css";
   composes: primary-bg from global;
@@ -34,5 +39,11 @@
   font-weight: bold;
   border-radius: 4px;
   cursor: pointer;
-  margin-right: 0.1rem;
+
+  height: 40px;
+  width: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

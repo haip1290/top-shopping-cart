@@ -11,8 +11,6 @@
 }
 
 .btn {
-  display: inline-block;
-
   color: white;
   padding: 1rem;
 
@@ -23,4 +21,5 @@
 .checkout {
   composes: btn;
   composes: primary-bg from global;
+  display: inline-block;
 }
