@@ -1,14 +1,24 @@
 .shop {
 }
 
+.items {
+  margin-bottom: 2rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
 .btn {
+  display: inline-block;
   color: white;
   padding: 1rem;
-  background-color: black;
   border-radius: 8px;
 }
 
-/* .check-out {
+.checkout {
+  color: black;
   composes: btn;
-  composes: primary-bg from "/src/App.css";
-} */
+  composes: primary-bg from global;
+}
