@@ -4,12 +4,15 @@ import NavBar from "./components/NavBar/NavBar";
 import { useState } from "react";
 
 function App() {
-  const [totalQuantity, setTotalQuantity] = useState(0);
+  const [cartItems, setCartItems] = useState([]);
+  const handleAddToCart = (item) => {
+    setCartItems([...cartItems, item]);
+  };
   return (
     <>
-      <NavBar quantity={totalQuantity} />
+      <NavBar quantity={cartItems.length} />
       <main>
-        <Outlet context={setTotalQuantity} />
+        <Outlet context={handleAddToCart} />
       </main>
     </>
   );

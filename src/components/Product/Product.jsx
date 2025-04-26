@@ -5,10 +5,7 @@ import { useState } from "react";
 
 const Product = ({ product }) => {
   const [quantity, setQuantity] = useState(1);
-  const setTotalQuantity = useOutletContext();
-  const handleAddToCart = () => {
-    setTotalQuantity((prev) => prev + quantity);
-  };
+  const handleAddToCart = useOutletContext();
 
   return (
     <div className={styles.product}>
@@ -19,7 +16,11 @@ const Product = ({ product }) => {
       <div>${product.price}</div>
       <form>
         <InputQuantity quantity={quantity} setQuantity={setQuantity} />
-        <button className={styles.btn} type="button" onClick={handleAddToCart}>
+        <button
+          className={styles.btn}
+          type="button"
+          onClick={() => handleAddToCart(product)}
+        >
           Add to cart
         </button>
       </form>
